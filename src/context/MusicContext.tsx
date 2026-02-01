@@ -16,7 +16,7 @@ interface MusicContextType {
 const MusicContext = createContext<MusicContextType | undefined>(undefined);
 
 // Fallback logic could be added effectively here if needed using a local constant
-const FALLBACK_VIDEOS: YouTubeVideo[] = [];
+
 
 export const MusicProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     const [videos, setVideos] = useState<YouTubeVideo[]>([]);

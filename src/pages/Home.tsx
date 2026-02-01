@@ -9,7 +9,7 @@ import { useEmotion } from '@/context/EmotionContext';
 
 const Home: React.FC = () => {
     const { videos, isLoading: isMusicLoading, hasError } = useMusic();
-    const { currentEmotion, isCameraActive, status } = useEmotion();
+    const { currentEmotion, status } = useEmotion();
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-dark-bg via-[#1a1a1a] to-black text-white">
